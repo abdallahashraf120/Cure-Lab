@@ -1,5 +1,7 @@
-# Cure-Lab
-Pharmacy online store
+# CureLab - Online Pharmacy Store
+
+CureLab is an online pharmacy store built with Bootstrap. It provides a seamless and user-friendly interface for customers to browse and purchase pharmaceutical products
+
 # Home page
 ![curelab1](https://github.com/abdallahashraf120/Cure-Lab/assets/100969020/27fd57ac-1308-4adc-a070-8717d041444d)
 ![curelab2](https://github.com/abdallahashraf120/Cure-Lab/assets/100969020/5eae0706-f394-4a16-9d3d-b6100edaed9a)
