@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>CureLab</title>
+    <link style="width: 1000px;" rel="icon" type="image/png" href="./images/logo.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      .badge {
+          background-color: yellow;
+          color: black;
+          border-radius: 50%;
+          padding: 5px 8px;
+      }
+  </style>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <div class="container-fluid">
+        <img  src="./images/logo.png" style="width: 40px; height:40px; " >
+        <a style="font-weight: bold;" class="navbar-brand" href="index.html">CureLab</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            </ul>
+            <a href="cart.html" class="btn btn-outline-success position-relative" type="button" id="cartButton"><i class="fa fa-cart-plus"></i> Cart <span id="cartItemCount" class="badge bg-danger">0</span></a> 
+        </div>
+    </div>
+</nav>
+
+      <br>
+
+        <div class="text-center">
+        <h1 style="color: #303030; font-size: 50px;font-weight: bold; ">Welcome To Our Store</h1>
+        </div>
+
+    <div class="container">
+          <div class="card" style="width: 18rem;">
+        <img src="./images/Ibuprofen.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Ibuprofen</h5>
+          <p class="card-text"> A nonsteroidal anti-inflammatory drug (NSAID) commonly used to relieve pain, reduce inflammation, and lower fever.</p>
+          <p>9.99$</p>
+          <button onclick="addToCart('Ibuprofen', 9.99, './images/Ibuprofen.png')" class="btn btn-dark">Add to cart</button>
+        </div>
+      </div>  
+
+      <div class="card" style="width: 18rem;">
+        <img src="./images/Acetaminophen.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Acetaminophen</h5>
+          <p class="card-text">A pain reliever and fever reducer. It's widely used and generally considered safe when taken at recommended doses.</p>
+          <p>10$</p>
+          <button onclick="addToCart('Acetaminophen', 10, './images/Acetaminophen.png')" class="btn btn-dark">Add to cart</button>
+        </div>
+      </div>  
+
+      <div class="card" style="width: 18rem;">
+        <img src="./images/Lisinopril.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Lisinopril</h5>
+          <p class="card-text">An angiotensin-converting enzyme (ACE) inhibitor used to treat high blood pressure and heart failure.</p>
+          <div class="box">
+
+            <p>5.99$</p>
+            <button onclick="addToCart('Lisinopril', 5.99, './images/Lisinopril.jpg')" class="btn btn-dark">Add to cart</button>
+          </div>
+        </div>
+      </div>  
+
+      <div class="card" style="width: 18rem;">
+        <img src="./images/Atorvastatin.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Atorvastatin</h5>
+          <p class="card-text">A statin drug used to lower cholesterol levels and reduce the risk of heart disease.</p>
+          <br>
+          <p>8$</p>
+          <button onclick="addToCart('Atorvastatin', 8, './images/Atorvastatin.png')" class="btn btn-dark">Add to cart</button>
+        </div>
+      </div> 
+      
+    </div> 
+    <div class="container">
+      <div class="card" style="width: 18rem;">
+    <img  src="./images/clindamycin-hcl.jpg" class="card-img-top" alt="...">
+    
+    <div class="card-body">
+      <h5 class="card-title">Clindamycin</h5>
+      <p class="card-text"> A nonsteroidal anti-inflammatory drug (NSAID) commonly used to relieve pain, reduce inflammation, and lower fever.</p>
+      <p>9.99$</p>
+      <button onclick="addToCart('Clindamycin', 9.99, './images/clindamycin-hcl.jpg')" class="btn btn-dark">Add to cart</button>
+    </div>
+  </div>  
+
+  <div class="card" style="width: 18rem;">
+    <img src="./images/Ciprofloxacin.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Ciprofloxacin</h5>
+      <p class="card-text">A pain reliever and fever reducer. It's widely used and generally considered safe when taken at recommended doses.</p>
+      <p>10$</p>
+      <button onclick="addToCart('Ciprofloxacin', 10, './images/Ciprofloxacin.png')" class="btn btn-dark">Add to cart</button>
+    </div>
+  </div>  
+
+  <div class="card" style="width: 18rem;">
+    <img src="./images/Doxycycline.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Doxycycline</h5>
+      <p class="card-text">An angiotensin-converting enzyme (ACE) inhibitor used to treat high blood pressure and heart failure.</p>
+      <div class="box">
+
+        <p>5.99$</p>
+        <button onclick="addToCart('Doxycycline', 5.99, './images/Doxycycline.png')" class="btn btn-dark">Add to cart</button>
+      </div>
+    </div>
+  </div>  
+
+  <div class="card" style="width: 18rem;">
+    <img src="./images/Levothyroxine.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Levothyroxine</h5>
+      <p class="card-text">A statin drug used to lower cholesterol levels and reduce the risk of heart disease.</p>
+      <br>
+      <p>8$</p>
+      <button onclick="addToCart('Levothyroxine', 8, './images/Levothyroxine.jpg')" class="btn btn-dark">Add to cart</button>
+    </div>
+  </div> 
+  
+    </div> 
+    <div class="container">
+  <div class="card" style="width: 18rem;">
+<img src="./images/Omeprazole.png" class="card-img-top" alt="...">
+<div class="card-body">
+  <h5 class="card-title">Omeprazole</h5>
+  <p class="card-text"> A nonsteroidal anti-inflammatory drug (NSAID) commonly used to relieve pain, reduce inflammation, and lower fever.</p>
+  <p>9.99$</p>
+  <button onclick="addToCart('Omeprazole', 9.99, './images/Omeprazole.png')" class="btn btn-dark">Add to cart</button>
+</div>
+</div>  
+
+<div class="card" style="width: 18rem;">
+<img src="./images/Naproxen.png" class="card-img-top" alt="...">
+<div class="card-body">
+  <h5 class="card-title">Naproxen</h5>
+  <p class="card-text">A pain reliever and fever reducer. It's widely used and generally considered safe when taken at recommended doses.</p>
+  <p>10$</p>
+  <button onclick="addToCart('Naproxen', 10, './images/Naproxen.png')" class="btn btn-dark">Add to cart</button>
+</div>
+</div>  
+
+<div class="card" style="width: 18rem;">
+<img src="./images/Metoprolol.png" class="card-img-top" alt="...">
+<div class="card-body">
+  <h5 class="card-title">Metoprolol</h5>
+  <p class="card-text">An angiotensin-converting enzyme (ACE) inhibitor used to treat high blood pressure and heart failure.</p>
+  <div class="box">
+
+    <p>5.99$</p>
+    <button onclick="addToCart('Metoprolol', 5.99, './images/Metoprolol.png')" class="btn btn-dark">Add to cart</button>
+  </div>
+</div>
+</div>  
+
+<div class="card" style="width: 18rem;">
+<img src="./images/Gabapentin.png" class="card-img-top" alt="...">
+<div class="card-body">
+  <h5 class="card-title">Gabapentin</h5>
+  <p class="card-text">A statin drug used to lower cholesterol levels and reduce the risk of heart disease.</p>
+  <br>
+  <p>8$</p>
+  <button onclick="addToCart('Gabapentin', 8, './images/Gabapentin.png')" class="btn btn-dark">Add to cart</button>
+</div>
+</div> 
+
+    </div> 
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+            <a class="page-link">Previous</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+      </nav>
+
+<footer>
+  <div class="text-center py-3 bg-dark text-light">
+   
+    <img  src="./images/logo.png" style="width: 60px; height:60px; " >  &copy; 2024 <a href="https://www.linkedin.com/in/abdallah-ashraf-135aa0205/" >Abdallah Ashraf</a>. All rights reserved.
+    
+    
+  </div>
+</footer>
+      
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <script>
+        function addToCart(name, price, img) {
+            const item = { name, price, img };
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart.push(item);
+            localStorage.setItem('cart', JSON.stringify(cart));
+            location.reload();
+        }
+        document.addEventListener("DOMContentLoaded", function () {
+            
+            updateCartItemCount();
+
+          
+            function updateCartItemCount() {
+                const cartItemCount = document.getElementById('cartItemCount');
+                if (cartItemCount) {
+                    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+                    cartItemCount.innerText = cart.length;
+                }
+            }
+
+            function addToCart(name, price, img, counterId) {
+                const item = { name, price, img };
+                let cart = JSON.parse(localStorage.getItem('cart')) || [];
+                cart.push(item);
+                localStorage.setItem('cart', JSON.stringify(cart));
+
+                
+                const counter = document.getElementById(counterId);
+                if (counter) {
+                    const currentCount = parseInt(counter.innerText);
+                    counter.innerText = currentCount + 1;
+                }
+
+            
+                updateCartItemCount();
+            }
+        });
+    </script>
+</body>
+</html>
